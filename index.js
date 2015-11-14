@@ -48,5 +48,5 @@ app.all('/clean', function (req, res) {
     res.send('OK');
   });
 });
-app.listen(4000);
-console.log('Express app started on port %d', 4000);
+app.listen(process.env.PORT || 4000);
+console.log('Express app started on port %d', process.env.PORT || 4000);
